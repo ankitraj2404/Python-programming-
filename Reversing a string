@@ -1,0 +1,15 @@
+my_string=input("Enter a string: ")
+
+length = len(my_string)
+
+print("The length of the string is: ",length)
+
+reverse_string=""
+
+for i in my_string:
+
+    reverse_string=i+reverse_string
+
+print("The original stirng is: ",my_string)
+
+print("The reversed string is: ",reverse_string)
