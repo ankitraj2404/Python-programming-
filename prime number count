@@ -1,0 +1,23 @@
+num=int(input("Enter the number of elemnts: "))
+
+arr = []
+
+print("Enter the elements: ")
+
+for i in range(num):
+    value=int(input())
+    arr.append(value)
+
+print("The entered values are: ")
+
+for i in range(num):
+    print(arr[i])
+
+    count=0
+
+    for j in range(2,int(num/2)):
+        if(arr[i]%j!=0):
+            count+=1
+
+print("Total prime number is: ",count)
+
